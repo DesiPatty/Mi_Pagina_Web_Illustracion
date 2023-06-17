@@ -1,0 +1,831 @@
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+  text-decoration: none;
+  color: inherit;}
+
+
+  * {
+  box-sizing: border-box;
+}
+
+.enlarged {
+  transform: scale(10); /* Cambia el valor según el tamaño de ampliación deseado */
+  transition: transform 0.3s ease-in-out;
+  position: fixed;
+}
+
+body {
+  font-size: 14px;
+}
+
+ /* Tamaño pagina web */
+.v0_3 {
+  width: 90%;
+  height: 100vh; /* El 100% de la altura visible del dispositivo */
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: relative;
+  top: -50px;
+  left: 0px;
+  /*overflow: hidden; (no se si esto tiene que ir)*/
+  margin-bottom: 20px;
+}
+/* Foto de perfil */
+.v2_3 {
+  border-radius: 100%;
+  width: 164px;
+  height: 162px;
+  background: url(../images/v2_3.png);
+  opacity: 1;
+  position: absolute;
+  top: 90px;
+  left: 158px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-size: cover; 
+  background-position: center; 
+}
+ /* logo DesiPatty */
+.v3_5 {
+  width: 356px;
+  color: rgba(228,33,19,1);
+  position: absolute;
+  top: 264px;
+  left: 62px;
+  font-family: Pacifico;
+  font-weight: Regular;
+  font-size: 65px;
+  opacity: 1;
+  text-align: center;
+}
+ /* logo Portafolio */
+.v4_2 {
+  margin-bottom: 0px;
+  width: 271px;
+  color: rgba(109,181,56,1);
+  position: absolute;
+  top: 335px;
+  left: 104px;
+  margin-top: 20px;
+  font-family: Gorditas;
+  font-weight: Regular;
+  font-size: 53px;
+  opacity: 1;
+  text-align: center;
+}
+
+/* ---------------- */
+
+ /* direccion web */
+/* .v4_4 {
+  width: 370px;
+  color: rgb(206, 20, 20);
+  position: absolute;
+  top: 637px;
+  left: 55px;
+  font-family: Gorditas;
+  font-weight: Regular;
+  font-size: 22px;
+  opacity: 1;
+  text-align: center;} */
+
+/* Derechos reservados */
+.v4_5 {
+  width: 370px;
+  color: rgb(87, 142, 76);
+  position: absolute;
+  top: 745px;
+  left: 55px;
+  font-family: Arima Madurai;
+  font-weight: Regular;
+  font-size: 14px;
+  opacity: 1;
+  text-align: center;
+}
+/* ----Portafolio------ */
+
+/* imagen aranara */
+.v4_7 {
+  background-attachment:"../portafolio_variado/Aranara.png" ;
+  width: 281px;
+  height: 288px;
+  background: rgba(129,188,80,1);
+  opacity: 1;
+  position: relative;
+  top: 80px;
+  left: 457px;
+  overflow: hidden;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+  
+}
+/* Boton Interactivo */
+
+.v4_7:hover img {
+  filter: brightness(114%); /* Aumenta el brillo para atenuar hacia el blanco */
+  transition: filter 0.3s ease-in-out;
+}
+
+.v4_7.enlarged {
+  width: 700px; /* Cambia el valor para ajustar el ancho deseado */
+  height: 700px; /* Cambia el valor para ajustar la altura deseada */
+  cursor: zoom-out;
+  
+}
+/* Boton Interactivo */
+.v4_7.enlarged:hover img {
+  filter: none; /* Elimina la atenuación cuando la imagen esté abierta */
+}
+
+@keyframes enlargeAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.v4_7 img {
+  width: 120%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 150%;
+  transition: transform 0.3s ease-in-out;
+}
+/* ---------------- */
+
+/* image klee */
+.v4_8 {
+  width: 281px;
+  height: 288px;
+  background: rgb(255, 232, 202);
+  opacity: 1;
+  position: absolute;
+  top: 80px;
+  left: 755px;
+  overflow: hidden;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+/* Boton Interactivo */
+
+.v4_8:hover img {
+  filter: brightness(108%); /* Aumenta el brillo para atenuar hacia el blanco */
+  transition: filter 0.3s ease-in-out;
+  
+}
+
+.v4_8.enlarged {
+  width: 640px; /* Cambia el valor para ajustar el ancho deseado */
+  height: 700px; /* Cambia el valor para ajustar la altura deseada */
+  cursor: zoom-out;
+  
+}
+/* Boton Interactivo */
+.v4_8.enlarged:hover img {
+  filter: none; /* Elimina la atenuación cuando la imagen esté abierta */
+}
+
+@keyframes enlargeAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.v4_8 img {
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 150%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+/* ---------------- */
+  
+/* imagen 3d_maquinita */
+.v4_9 {
+  width: 281px;
+  height: 288px;
+  background: rgba(255,219,0,1);
+  opacity: 1;
+  position: absolute;
+  top: 80px;
+  left: 1051px;
+  overflow: hidden;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+  }
+
+/* Boton Interactivo */
+
+.v4_9:hover img {
+  filter: brightness(108%); /* Aumenta el brillo para atenuar hacia el blanco */
+  transition: filter 0.3s ease-in-out;
+  
+}
+
+.v4_9.enlarged {
+  width: 700px; /* Cambia el valor para ajustar el ancho deseado */
+  height: 700px; /* Cambia el valor para ajustar la altura deseada */
+  cursor: zoom-out;
+  
+}
+/* Boton Interactivo */
+.v4_9.enlarged:hover img {
+  filter: none; /* Elimina la atenuación cuando la imagen esté abierta */
+}
+
+@keyframes enlargeAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.v4_9 img {
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 150%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+
+ /* ---------------- */
+
+ /* image_logo_elemental_tale */ 
+.v4_11 {
+  width: 281px;
+  height: 287px;
+  background: rgba(241,92,46,1);
+  opacity: 1;
+  position: absolute;
+  top: 379px;
+  left: 455px;
+  overflow: hidden;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+/* Boton Interactivo */
+
+.v4_11:hover img {
+  filter: brightness(117%); /* Aumenta el brillo para atenuar hacia el blanco */
+  transition: filter 0.3s ease-in-out;
+  
+}
+
+.v4_11.enlarged {
+  width: 640px; /* Cambia el valor para ajustar el ancho deseado */
+  height: 700px; /* Cambia el valor para ajustar la altura deseada */
+  cursor: zoom-out;
+  
+}
+/* Boton Interactivo */
+.v4_11.enlarged:hover img {
+  filter: none; /* Elimina la atenuación cuando la imagen esté abierta */
+}
+
+@keyframes enlargeAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.v4_11 img {
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 150%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+/* ---------------- */
+
+/* image_green_frog */
+.v4_12 {
+  width: 281px;
+  height: 287px;
+  background: rgba(162,99,185,1);
+  opacity: 1;
+  position: absolute;
+  top: 379px;
+  left: 753px;
+  overflow: hidden;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+/* Boton Interactivo */
+
+.v4_12:hover img {
+  filter: brightness(108%); /* Aumenta el brillo para atenuar hacia el blanco */
+  transition: filter 0.3s ease-in-out;
+  
+}
+
+.v4_12.enlarged {
+  width: 640px; /* Cambia el valor para ajustar el ancho deseado */
+  height: 700px; /* Cambia el valor para ajustar la altura deseada */
+  cursor: zoom-out;
+  
+}
+/* Boton Interactivo */
+.v4_12.enlarged:hover img {
+  filter: none; /* Elimina la atenuación cuando la imagen esté abierta */
+}
+
+@keyframes enlargeAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.v4_12 img {
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 150%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+/* ---------------- */ 
+
+/* 3d_icon_time */
+.v4_13 {
+  width: 281px;
+  height: 287px;
+  background: rgba(110,199,238,1);
+  opacity: 1;
+  position: absolute;
+  top: 379px;
+  left: 1051px;
+  overflow: hidden;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+/* Boton Interactivo */
+
+.v4_13:hover img {
+  filter: brightness(108%); /* Aumenta el brillo para atenuar hacia el blanco */
+  transition: filter 0.3s ease-in-out;
+  
+}
+
+.v4_13.enlarged {
+  width: 700px; /* Cambia el valor para ajustar el ancho deseado */
+  height: 700px; /* Cambia el valor para ajustar la altura deseada */
+  cursor: zoom-out;
+  
+}
+/* Boton Interactivo */
+.v4_13.enlarged:hover img {
+  filter: none; /* Elimina la atenuación cuando la imagen esté abierta */
+}
+
+@keyframes enlargeAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.v4_13 img {
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 150%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+/* ---------------- */ 
+
+/* Imagen juego mahjong */
+.v4_14 {
+  width: 281px;
+  height: 288px;
+  background: rgba(189,212,126,1);
+  opacity: 1;
+  position: absolute;
+  top: 677px;
+  left: 455px;
+  overflow: hidden;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+/* Boton Interactivo */
+
+.v4_14:hover img {
+  filter: brightness(116%); /* Aumenta el brillo para atenuar hacia el blanco */
+  transition: filter 0.3s ease-in-out;
+  
+}
+
+.v4_14.enlarged {
+  width: 640px; /* Cambia el valor para ajustar el ancho deseado */
+  height: 700px; /* Cambia el valor para ajustar la altura deseada */
+  cursor: zoom-out;
+  
+}
+/* Boton Interactivo */
+.v4_14.enlarged:hover img {
+  filter: none; /* Elimina la atenuación cuando la imagen esté abierta */
+}
+
+@keyframes enlargeAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.v4_14 img {
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 150%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+
+/* ---------------- */ 
+
+/* Imagen juego super starcker 3 */
+.v4_15 {
+  width: 281px;
+  height: 288px;
+  background: rgba(237,69,72,1);
+  opacity: 1;
+  position: absolute;
+  top: 677px;
+  left: 753px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+
+/* Boton Interactivo */
+
+.v4_15:hover img {
+  filter: brightness(108%); /* Aumenta el brillo para atenuar hacia el blanco */
+  transition: filter 0.3s ease-in-out;
+  
+}
+
+.v4_15.enlarged {
+  width: 640px; /* Cambia el valor para ajustar el ancho deseado */
+  height: 700px; /* Cambia el valor para ajustar la altura deseada */
+  cursor: zoom-out;
+  
+}
+/* Boton Interactivo */
+.v4_15.enlarged:hover img {
+  filter: none; /* Elimina la atenuación cuando la imagen esté abierta */
+}
+
+@keyframes enlargeAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.v4_15 img {
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 150%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+/* ---------------- */ 
+
+
+/* Imagen libro un dia en la granja */
+.v4_16 {
+  width: 281px;
+  height: 288px;
+  background: rgba(255,219,0,1);
+  opacity: 1;
+  position: absolute;
+  top: 677px;
+  left: 1051px;
+  overflow: hidden;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+/* Boton Interactivo */
+
+.v4_16:hover img {
+  filter: brightness(112%); /* Aumenta el brillo para atenuar hacia el blanco */
+  transition: filter 0.3s ease-in-out;
+  
+}
+
+.v4_16.enlarged {
+  width: 640px; /* Cambia el valor para ajustar el ancho deseado */
+  height: 700px; /* Cambia el valor para ajustar la altura deseada */
+  cursor: zoom-out;
+  
+}
+/* Boton Interactivo */
+.v4_16.enlarged:hover img {
+  filter: none; /* Elimina la atenuación cuando la imagen esté abierta */
+}
+
+@keyframes enlargeAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.v4_16 img {
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 150%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+
+/* icono de instagram */
+.v4_46 {
+  background: url("../images/Icon_Instagram.svg");
+  width: 43px;
+  height: 43px;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 570px;
+  left: 192px;
+  overflow: hidden;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+  
+}
+/* Boton Interactivo atenuacion*/
+
+.v4_46:hover{
+  filter: brightness(70%); /* Cambia el valor para ajustar la atenuación deseada */
+  transition: filter 0.3s ease-in-out;
+}
+
+
+/* boton twitter */
+.v4_47 {
+  width: 43px;
+  height: 43px;
+  background: url("../images/Icon_Twitter.svg");
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 570px;
+  left: 246px;
+  overflow: hidden;
+}
+
+/* Boton Interactivo atenuacion*/
+
+.v4_47:hover{
+  filter: brightness(70%); /* Cambia el valor para ajustar la atenuación deseada */
+  transition: filter 0.3s ease-in-out;
+}
+
+/* ----------------------------*/
+
+/* Sobre mi */
+.v4_6 {
+  margin-top: -10px;
+  line-height: 20px; /* Interlineado de 20 píxeles */
+  width: 270px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 446px;
+  left: 105px;
+  font-family: Arima Madurai;
+  font-weight: Light;
+  font-size: 14px;
+  opacity: 1;
+  text-align: center;
+}
+/* boton resume */
+.v105_5 {
+  width: 178px;
+  height: 40px;
+  background: rgba(246, 195, 255, 1);
+  padding: 10px 10px;
+  margin: 10px;
+  opacity: 1;
+  position: absolute;
+  top: 666px;
+  left: 140px;
+  border-radius: 23px;
+  overflow: hidden;
+}
+/* Boton Interactivo atenuacion*/
+
+.v105_5:hover{
+  filter: brightness(70%); /* Cambia el valor para ajustar la atenuación deseada */
+  transition: filter 0.3s ease-in-out;
+}
+
+/* ----------------------------*/
+
+/* icono de contacto - color */
+.v105_6 {
+  width: 65px;
+  color: rgba(145, 38, 162, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Gorditas;
+  font-weight: Regular;
+  font-size: 16px;
+  opacity: 1;
+  text-align: center;
+}
+/* icono de contacto */
+.v105_10 {
+  width: 50px;
+  height: 50px;
+  background: url("../images/v105_10.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 617px;
+  left: 218px;
+  overflow: hidden;
+}
+
+/* Boton Interactivo atenuacion*/
+
+.v105_10:hover{
+  filter: brightness(70%); /* Cambia el valor para ajustar la atenuación deseada */
+  transition: filter 0.3s ease-in-out;
+}
+
+/* ----------------------------*/
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.enlarged {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+/*.no-scroll {
+  overflow: hidden;
+}
+
+/* ---------------- */ 
+/* efecto de color sobre la imagen cuando te paras sobre ella - no lo necesito pero quiero dejarlo aqui :) */
+/*.v4_12:hover img {
+  background-color: rgb(162,99,185,1);
+  opacity: 0.10; /* Cambia el valor para ajustar la opacidad deseada }*/
+/* ---------------- */ 
+
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 700px) {
+  /* ... Otros estilos para dispositivos móviles ... */
+
+
+  /* Derechos reservados (no funciona queria alinear todos los elementos cuando fuera un dispositivo de telefono */
+/* .v4_5 {
+  
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    margin-top: 5px; /* Separación arriba */
+    /* margin-bottom: 20px; /* Separación abajo  }*/
+  
+  /* Ajustar elementos debajo de v4_5 */
+  .v4_7 { top: 790px; /* Ajusta el valor según sea necesario */
+    left: 29%;
+    margin-top: 5px; /* Separación arriba */
+    margin-bottom: 20px; /* Separación abajo */
+  }
+  
+  .v4_8 { top: 1090px; /* Ajusta el valor según sea necesario */
+    left: 29%;
+    margin-top: 5px; /* Separación arriba */
+    margin-bottom: 20px; /* Separación abajo */
+  }
+  
+  .v4_9 { top: 1390px; /* Ajusta el valor según sea necesario */
+    left: 29%;
+    margin-top: 5px; /* Separación arriba */
+    margin-bottom: 20px; /* Separación abajo */
+  }
+
+  .v4_11 {top: 1690px; /* Ajusta el valor según sea necesario */
+    left: 29%;
+    margin-top: 5px; /* Separación arriba */
+    margin-bottom: 20px; /* Separación abajo */
+  }
+  .v4_12 {top: 1990px; /* Ajusta el valor según sea necesario */
+    left: 29%;
+    margin-top: 5px; /* Separación arriba */
+    margin-bottom: 20px; /* Separación abajo */
+  }
+  .v4_13 {top: 2290px; /* Ajusta el valor según sea necesario */
+    left: 29%;
+    margin-top: 5px; /* Separación arriba */
+    margin-bottom: 20px; /* Separación abajo */
+  }
+  .v4_14 {top: 2590px; /* Ajusta el valor según sea necesario */
+    left: 29%;
+    margin-top: 5px; /* Separación arriba */
+    margin-bottom: 20px; /* Separación abajo */
+  }
+  .v4_15 {top: 2890px; /* Ajusta el valor según sea necesario */
+    left: 29%;
+    margin-top: 5px; /* Separación arriba */
+    margin-bottom: 20px; /* Separación abajo */
+  }
+  .v4_16 {top: 3190px; /* Ajusta el valor según sea necesario */
+    left: 29%;
+    margin-top: 5px; /* Separación arriba */
+    margin-bottom: 20px; /* Separación abajo */
+  }
+}
+
